@@ -8,8 +8,10 @@ public class MetaScript : MonoBehaviour
     public int playerScore;
     public Text scoreText;
 
-    public void addScore()
+    [ContextMenu("Increase Score")] //This allows us to run the function from Unity useful for testing
+    public void addScore(int scoreToAdd)
     {
-
+        playerScore = playerScore + scoreToAdd;
+        scoreText.text = playerScore.ToString();
     }
 }
