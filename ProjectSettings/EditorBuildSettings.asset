@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 142cee826f48e8e4f8024c2c8ae1093d
   - enabled: 1
+    path: Assets/Scenes/InTransition.unity
+    guid: f78d784c7ef28524bb6ae9e5f923cc9f
+  - enabled: 1
     path: Assets/Scenes/MainGameView.unity
     guid: 954d2d480efe4bc41a3abe5f5b390b56
   m_configObjects: {}

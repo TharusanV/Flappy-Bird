@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 5182322325227954817}
   m_Layer: 5
   m_Name: MiddlePipe
-  m_TagString: Untagged
+  m_TagString: MiddlePipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -362,4 +362,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81cd4a2b5ce9c7c42bcb258553125803, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meta: {fileID: 0}
+  logic: {fileID: 0}
