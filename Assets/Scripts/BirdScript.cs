@@ -6,13 +6,13 @@ public class BirdScript : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
     public float flapSpeed;
-    public MetaScript meta;
+    public LogicScript logic;
     public bool birdAlive = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        meta = GameObject.FindGameObjectWithTag("MetaLogic").GetComponent<MetaScript>();
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
     // Update is called once per frame
@@ -27,7 +27,16 @@ public class BirdScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        meta.gameOver();
-        birdAlive = false;
+        if (collision.gameObject.layer == 6)
+        {
+            
+        }
+
+        else
+        {
+            logic.gameOver();
+            birdAlive = false;
+        }
+
     }
 }

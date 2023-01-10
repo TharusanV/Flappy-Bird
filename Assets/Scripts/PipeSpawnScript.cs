@@ -8,7 +8,7 @@ public class PipeSpawnScript : MonoBehaviour
     public GameObject pipe;
     public float spawnRate = 2;
     private float timer = 0;
-    public float heightOffSet = 10;
+    public float heightOffSet = 3;
     
 
 

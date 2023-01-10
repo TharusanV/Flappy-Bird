@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PipeMiddleScript : MonoBehaviour
 {
-    public MetaScript meta;
+    public LogicScript logic;
     // Start is called before the first frame update
     void Start()
     {
-        meta = GameObject.FindGameObjectWithTag("MetaLogic").GetComponent<MetaScript>();
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class PipeMiddleScript : MonoBehaviour
     {
         if (collision.gameObject.layer == 3)
         {
-            meta.addScore(1);
+            logic.addScore(1);
         }
     }
 }
